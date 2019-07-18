@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页</title>
+		<link rel="stylesheet" href="../css/project.css" />
+		<style type="text/css">
+			.detail_head{
+				width: 100%;
+				height: 50px;
+				color:#82b35c  ;
+				line-height: 50px;
+				
+			}
+			.head_head{
+				width: 70%;
+				/*margin: 0 auto;*/
+				display: flex;
+				background-color: rgba(203,203,203,0.5);
+				justify-content: space-between;
+				position:fixed;
+				padding-left: 15%;
+				padding-right:15%;
+				top: 0;
+			}
+			.head_head span{
+				margin-left: 50px;
+				/*margin-right: 30px;*/
+			}
+			.head_content{
+				width: 70%;
+				height: 100px;
+				line-height: 100px;
+				margin: 0 auto;
+				margin-top: 15px;
+				padding-top: 40px;
+				margin-bottom: 15px;
+			}
+			.headContent_up{
+				display: flex;
+				justify-content: space-between;
+			}
+			.head_sou{
+				width: 37%;
+			}
+			.head_sou>input{
+				margin: 0;
+				width: 68%;
+				height: 40px;
+				text-indent: 30px;
+				border: 2px #82b35c solid;
+				margin-right: -5px;
+			}
+			.head_sou>button{
+				width: 30%;
+				margin: 0;
+				color: #FFFFff;
+				height: 45px;
+				border:  2px #82b35c solid;
+				background-color:#82b35c ;
+			}
+			.headContent_up>div:nth-child(3){
+				font-size: 26px;
+				color: #545454;
+			}
+			.headContent_up>div>span{
+				font-size: 30px;
+				color: #82b35c ;
+			}
+			.head_foot{
+				width: 70%;
+				padding-left: 15%;
+				padding-right: 15%;
+				font-size: 16px;
+				height: 40px;
+				line-height: 40px;
+				margin: 0 auto;
+				margin-top: 15px;
+				display: flex;
+				justify-content:flex-start;
+				border-bottom: 2px solid #82b35c;
+			}
+		
+			.head_foot>div:nth-child(2){
+				display: flex;
+				justify-content: flex-start;
+				width: 65%;
+			}
+			.head_foot>div:nth-child(1){
+				width: 20%;
+				background-color: #82b35c;
+				color: #FFFFFF;
+			}
+			.head_foot>div:nth-child(3){
+				width: 15%;
+				background-color: #82b35c;
+				color: #FFFFFF;
+			}
+			.head_foot>div>div{
+				width: 10%;
+				
+			}
+			.detail_body{
+				width: 70%;
+				padding-left: 15%;
+				padding-right: 15%;
+				margin: 0 auto;
+				color: #727171;
+				background-color:#f2f2f2;
+				padding-bottom: 30px;
+			}
+			.detail_body>p{
+				text-align: left;
+			}
+			.body_up{
+				width: 100%;
+				padding: 25px;
+				box-sizing: border-box;
+				background-color: #FFFFFF;
+				display: flex;
+			}
+			.body_up>div:nth-child(1){
+				width: 500px;
+			}
+			.body_up>div>img{
+				width: 100%;
+			}
+			.body_up>div:nth-child(2){
+				width: 60%;
+				text-align: left;
+				padding-left: 3%;
+				padding-right: 3%;
+				box-sizing: border-box;
+				font-size: 16px;
+			}
+			.body_up>div>h3{
+				font-size:20px;
+			}
+			.body_up>div>div{
+				width: 100%;
+				display: flex;
+				padding-left: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				box-sizing: border-box;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				font-size: 18px;
+				background-color: rgba(203,203,203,0.2);
+				border-radius: 5px;
+			}
+			.body_up>div>div>h3{
+				font-size: 28px;
+				color: red;
+				padding-right: 25px;
+				margin-left: 10px;
+				border-right: 1px dashed #727171;
+				margin-right: 28px;
+			}
+			.body_youhui{
+				width: 100%;
+				background-color: #FFFFFF!important;
+				/*flex-wrap: wrap;*/
+			}
+			.body_youhui>div{
+				width: 50%;
+				font-size: 17px;
+				margin-bottom: 10px;
+			}
+			.body_youhui i:nth-child(1){
+				padding: 7px;
+				font-size: 30px;
+				border-radius: 50%;
+				margin-right: 15px;
+			}
+			.green{
+				color: #82b35c;
+				border: 1px #82b35c dashed;
+			}
+			.red{
+				border: 1px red dashed;
+			}
+			.yellow{
+				color: #D58512;
+				border: 1px #D58512 dashed;
+			}
+			.cheng{
+				color: royalblue;
+				border: 1px royalblue dashed;
+			}
+			.body_btn{
+				width: 100%;
+				background-color: #FFFFFF!important;
+			}
+			.body_btn>button{
+				border: 0;
+				width: 130px;
+				height: 40px;
+				color: #FFFFFF;
+			}
+			.body_btn>button:nth-child(1){
+				background-color: red;
+				margin-right: 30px;
+			}
+			.body_btn>button:nth-child(2){
+				background-color:#82b35c;
+				margin-right: 30px;
+			}
+			.body_down{
+				margin-top: 20px;
+				width: 100%;
+				background-color: #FFFFFF;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+			.body_down p{
+				width: 20%;
+				background-color: #82b35c;
+				text-align: center;
+				color: #FFFFFF;
+			}
+			.body_down hr{
+				color:#82b35c ;
+				border: 1px #82b35c solid;
+				margin-bottom: 5px;
+			}
+			.body_down img{
+				width: 100%;
+			}
+			.body_ewm{
+				position: absolute;
+				width:120px;
+				text-align:center;
+				line-height: 30px;
+				background-color: rgba(203,203,203,0.9);
+				padding: 10px;
+				border-radius: 5px;
+				font-weight: bold;
+				top: 505px;
+				right: 25%;
+				cursor: pointer;
+				display: none;
+			}
+			.body_ewm img{
+				width: 100%;
+			}
+			.body_jia,.body_youhui{
+				cursor: pointer;
+			}
+			.body_ewm1{
+				width:120px;
+				text-align:center;
+				line-height: 30px;
+				background-color: rgba(203,203,203,0.9);
+				padding: 10px;
+				border-radius: 5px;
+				font-weight: bold;
+				margin-left: 50px;
+				cursor: pointer;
+				display: none;
+			}
+			.body_ewm1 img{
+				width: 100%;
+			}
+			.body_btn>button{
+				border-radius: 10px;
+			-webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);   
+    			box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15); 
+			}
+		</style>
+	</head>
+	<body>
+		<div class="detail_head">
+			<div class="head_head">
+				<a href="javascript:history.back(-1)" style="font-size: 18px;color:#82b35c"><i class="iconfont" style="margin-right: 10px">&#xe68a;</i>返回上一页</a>
+				<div>
+					<span><i class="iconfont">&#xe906;</i>微信公众号</span>
+					<span><i class="iconfont">&#xe7ad;</i>联系我们</span>
+				</div>
+			</div>
+			<div class="head_content">
+				<div class="headContent_up">
+					<div>
+						<img src="../img/logonew.png" />
+					</div>
+					<div class="head_sou">
+						<input placeholder="搜索您想要的鲜果"/>
+						<button>搜索</button>
+					</div>
+					<div>
+						抢购热线：<span>1232312132</span>
+					</div>
+				</div>
+			</div>
+			<div class="head_foot">
+				<div>
+					关键词：
+				</div>
+				<div>
+					<div>国产</div>
+					<div>鲜果</div>
+					<div>苹果</div>
+					<div>特惠</div>
+					<!--<div>火龙果</div>-->
+				</div>
+				<div>
+					<i class="iconfont">&#xe66c;</i>
+					<span>手机访问</span>
+				</div>
+			</div>
+			<div class="detail_body">
+				<p>您现在的位置：推荐鲜果>鲜果详情</p>
+				<div class="body_content">
+					<div class="body_up">
+						<div>
+							<img src="../img/mihoutao.jpg" />
+						</div>
+						<div>
+							<h3>周至猕猴桃</h3>
+							<p>附 送：精美礼盒，安全包装，快速配送</p>
+							<p>配 送：同城一小时快速配送</p>
+							<p>备 注：周至绿色有机猕猴桃产业基地，产出的优质猕猴桃，个大皮薄，酸甜可口，周至猕猴桃荣获中国猕猴桃之乡，中国绿色食品发展中心认证为绿色食品，中国60%猕猴桃鲜果产自周至。</p>
+							<div class="body_jia">
+								<p>特惠价：<h3>￥128</h3></p>
+								<span>关注热度：100%<span class="iconfont" style="margin-left: 10px;font-size: 25px;color: red;">&#xe7a4;</span></span>
+							</div>
+							<div class="body_youhui">
+								<div><i class="iconfont green">&#xe7dc;</i>会员8.5折</div>
+								<div><i class="iconfont red">&#xe854;</i>优质保障</div>
+								<div><i class="iconfont yellow">&#xe7cb;</i>极速配送</div>
+								<div><i class="iconfont cheng">&#xe947;</i>无忧退换货</div>
+							</div>
+							<div class="body_btn">
+								<button>手机下单</button>
+								<button>咨询客服</button>
+								<p class="body_ewm1">
+								<img src="../img/xd.png">
+								扫码立即下单
+								</p>
+							</div>
+							<p class="body_ewm">
+								<img src="../img/xd.png">
+								扫码立即下单
+							</p>
+						</div>
+					</div>
+					<div class="body_down">
+						<p>商品详情</p>
+						<!--<br />-->
+						<hr />
+						<img src="../img/xiangqiang.jpg" />
+					</div>
+					
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.2.min.js" ></script>
+	<script type="text/javascript">
+
+		$(function(){
+			$(".body_jia,.body_youhui").on({
+				mouseover : function(){
+						$(".body_ewm").show() ;
+					} ,
+					mouseout : function(){
+						$(".body_ewm").hide() ;
+					} 
+
+			})
+			$(".body_btn>button").click(function(){
+				$(".body_ewm1").toggle();
+			})
+		})
+	</script>
+</html>
