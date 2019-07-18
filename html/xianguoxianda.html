@@ -1,625 +1,512 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>鲜果鲜达</title>
-<link rel="stylesheet" type="text/css" href="../css/project.css?t=1" />
 
-<!-- default css files -->
+<head>
+	<meta charset="utf-8">
+	<title>鲜果鲜达</title>
+	<link rel="stylesheet" type="text/css" href="../css/project.css?t=1" />
+
+	<!-- default css files -->
 	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css" media="all">
 	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="../css/font-awesome.min.css" />
-<!-- default css files -->
-	
-<!--web font-->
-<link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-<!--//web font-->
-<style type="text/css">
-    .new_yxcontentList{
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        -ms-display: flex;
-        -moz-display: flex;
-        -webkit-display: flex;
-        justify-content: space-between;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .new_yxcontentList>div>div{
-        color: #414141;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        
-    }
-    .new_yxcontentList>div>div{
-        display: flex;
-        -ms-display: flex;
-        -moz-display: flex;
-        -webkit-display: flex;
-        text-align: left;
-    }
-    .new_yxcontentList>div>div>img{
-        width: 150px;
-        height: 150px;
-        margin-right: 30px;
-        
-    }
-    .new_yxcontentList>div>div>div{
-        /*padding-top: 35px;*/
-        
-    }
-    .new_yxcontentList>div>div>div>h4{
-        margin-bottom: 3px;
-    }
-    .new_yxcontentList>div>div>div>i{
-        font-size: 30px;
-        color: green;
-        padding: 10px;
-        padding-left: 11px;
-        padding-right: 11px;
-        border:1px green dashed;
-        border-radius: 50%;
-    }
-    .new_yxcontentList>div>div>div>span{
-        font-size: 21px;
-        margin-right: 15px;
-    }
-    .new_yxcontentList>div:nth-child(2){
+	<!-- default css files -->
 
-        width: 33.3%;
-        
-    }
-    .divtwo>div{
+	<!--web font-->
+	<link
+		href="http://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+	<link
+		href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+	<!--//web font-->
+	<style type="text/css">
+		.new_yxcontentList {
+			width: 70%;
+			margin: 0 auto;
+			display: flex;
+			-ms-display: flex;
+			-moz-display: flex;
+			-webkit-display: flex;
+			justify-content: space-between;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
 
-    }
-    .duixinyouhui{
-        width: 100%;
-        margin-top: 30px;
-        margin-bottom: 50px;
-            display: flex;
-        -ms-display: flex;
-        -moz-display: flex;
-        -webkit-display: flex;
-    }
-    .duixinyouhui>div{
-        width: 33.3%;
-    }
-    .duixinyouhui>div>img{
-        width: 100%;
-    }
-     .divtwo>img{
-        width: 100%;
-       /* margin-top: -100px;*/
-       margin-top: 35px;
-        position: relative;
+		.new_yxcontentList>div>div {
+			color: #414141;
+			margin-bottom: 20px;
+			margin-top: 20px;
 
-    }
-    .divtwodiv{
-        margin-top: -370px;
-        position: absolute;
-        z-index: 111;
-        margin-left: 6%;
-    }
-    .shuju_top{
-    	 width:30%;
-    	 margin:0 auto;
-    	 color: #000000;
-    	 border-left: 2px #C5C1C0 solid;
-    	 border-right: 2px #C5C1C0 solid;
-    	 margin-top: 20px;
-    	 margin-bottom: 20px;
-    	 padding-left: 25px;
-    	 padding-right: 25px;
-    	 box-sizing: border-box;
-    	 padding-top: 15px;
-    	 padding-bottom: 15px;
-    }
-    .shuju_top>p:nth-child(1){
-    	color: #008000;
-    	font-size: 19px;
-    	padding-bottom: 10px;
-    }
-    .shuju_top>p:nth-child(2){
-    	font-size: 25px;
-    	font-weight: bold;
-    	padding-bottom: 10px;
-    }
-    .shuju_top>p:nth-child(3){
-    	color: #414141;
-    }
-    .about h5{
-    	color: #82b35c;
-    }
-    .aboutleft h4{
-    	color: #82b35c;
-    }
-    .panel-default > .panel-heading{
-    	background-color:#82b35c ;
-    }
-    .count-grid span{
-    	background-color:#82b35c ;
-    }
-    #stats{
-    	margin-top: 60px;
-    }
-    .abouthead{
-    	margin-bottom: 80px;
-    }
-    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption{
-    	background-color:#82b35c;
-    }
-    .xgxd_content>div{
-    	width: 300px;
-    	height: 700px;
-    	box-shadow:5px 5px 5px 5px rgba(0,0,0,0.3);
-    }
-    .xgxd_content>div>img{
-    	width: 300px;
-    	
-    }
-    .xgxd_content>div>p{
-    	padding-right: 15px;
-    }
-    .agile-figcaption>h4{
-    	font-size: 25px!important;
-    }
-</style>
+		}
+
+		.new_yxcontentList>div>div {
+			display: flex;
+			-ms-display: flex;
+			-moz-display: flex;
+			-webkit-display: flex;
+			text-align: left;
+		}
+
+		.new_yxcontentList>div>div>img {
+			width: 150px;
+			height: 150px;
+			margin-right: 30px;
+
+		}
+
+		.new_yxcontentList>div>div>div {
+			/*padding-top: 35px;*/
+
+		}
+
+		.new_yxcontentList>div>div>div>h4 {
+			margin-bottom: 3px;
+		}
+
+		.new_yxcontentList>div>div>div>i {
+			font-size: 30px;
+			color: green;
+			padding: 10px;
+			padding-left: 11px;
+			padding-right: 11px;
+			border: 1px green dashed;
+			border-radius: 50%;
+		}
+
+		.new_yxcontentList>div>div>div>span {
+			font-size: 21px;
+			margin-right: 15px;
+		}
+
+		.new_yxcontentList>div:nth-child(2) {
+
+			width: 33.3%;
+
+		}
+
+		.divtwo>div {}
+
+		.duixinyouhui {
+			width: 100%;
+			margin-top: 30px;
+			margin-bottom: 50px;
+			display: flex;
+			-ms-display: flex;
+			-moz-display: flex;
+			-webkit-display: flex;
+		}
+
+		.duixinyouhui>div {
+			width: 33.3%;
+		}
+
+		.duixinyouhui>div>img {
+			width: 100%;
+		}
+
+		.divtwo>img {
+			width: 100%;
+			/* margin-top: -100px;*/
+			margin-top: 35px;
+			position: relative;
+
+		}
+
+		.divtwodiv {
+			margin-top: -370px;
+			position: absolute;
+			z-index: 111;
+			margin-left: 6%;
+		}
+
+		.shuju_top {
+			width: 30%;
+			margin: 0 auto;
+			color: #000000;
+			border-left: 2px #C5C1C0 solid;
+			border-right: 2px #C5C1C0 solid;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-left: 25px;
+			padding-right: 25px;
+			box-sizing: border-box;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.shuju_top>p:nth-child(1) {
+			color: #008000;
+			font-size: 19px;
+			padding-bottom: 10px;
+		}
+
+		.shuju_top>p:nth-child(2) {
+			font-size: 25px;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+
+		.shuju_top>p:nth-child(3) {
+			color: #414141;
+		}
+
+		.about h5 {
+			color: #82b35c;
+		}
+
+		.aboutleft h4 {
+			color: #82b35c;
+		}
+
+		.panel-default>.panel-heading {
+			background-color: #82b35c;
+		}
+
+		.count-grid span {
+			background-color: #82b35c;
+		}
+
+		#stats {
+			margin-top: 60px;
+		}
+
+		.abouthead {
+			margin-bottom: 80px;
+		}
+
+		[class^='imghvr-'] .agile-figcaption,
+		[class*=' imghvr-'] .agile-figcaption {
+			background-color: #82b35c;
+		}
+
+		.xgxd_content>div {
+			width: 300px;
+			height: 700px;
+			box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		.xgxd_content>div>img {
+			width: 300px;
+
+		}
+
+		.xgxd_content>div>p {
+			padding-right: 15px;
+		}
+
+		.agile-figcaption>h4 {
+			font-size: 25px !important;
+		}
+	</style>
 
 
 
 </head>
+
 <body style="width: 80%;margin: 0 auto;">
 	<div class="logo" id="logo"></div>
-<!--固定导航-->
-<ul class="menu">
-	<Li data-menuanchor="page6"><a href="xianguoinform.html">关于鲜果</a></Li>
-    <Li data-menuanchor="page5"><a href="xianguofuwu.html">鲜果服务</a></Li>
-    <Li data-menuanchor="page4"><a href="xianguodingzhi.html">鲜果定制</a></Li>
-    <Li data-menuanchor="page3" class="active"><a href="xianguoxianda.html">鲜果鲜达</a></Li>
-    <Li data-menuanchor="page2"><a href="xianguoyouxuan.html">鲜果优选</a></Li>
-    <Li data-menuanchor="page1"><a href="../index.html">首页</a></Li>
-</ul>
-<div class="banner">
-    <img src="../img/banner44.jpg"> 
-</div>
-  	   </div>
-        <div class="section1_top" style="top:30px">
-        <p>RECOMMEND</p>
-        <div>
-            <p>鲜果鲜达</p>
-        </div>
-    </div>
-    <!-- <div class="youshi">
-    	<div>
-    		<img src="../img/xgxd (2).png" />
-    		<h3>产地优势</h3>
-    		<p>全国480个水果产地直销</p>
-    	</div>
-    	<div>
-    		<img src="../img/xgxd (3).png" />
-    		<h3>基地优势</h3>
-    		<p>100个水果绿色基地直供</p>
-    	</div>
-    	<div>
-    		<img src="../img/xgxd (4).png" />
-    		<h3>运输优势</h3>
-    		<p>海陆空一体化交通运输网</p>
-    	</div>
-    	<div>
-    		<img src="../img/xgxd (5).png" />
-    		<h3>配送优势</h3>
-    		<p>完善的同城配送网络</p>
-    	</div> 
-    </div>-->
-     <div class="new_yxcontentList">
-        <div style="text-align: right;">
-            <div style="display: flex;justify-content: flex-end">
-                <!-- <img src="../img/apple5.jpg" /> -->
-                
-                <br />
-                <div style="margin-top: 30px">
-                    <span>用户手机下单</span>
-                    <i class="iconfont">&#xe838;</i>
-                   
-
-
-
-                    <!-- <h4>美国进口蛇果</h4>
-                    <i class="iconfont">&#xe617;</i>
-                    <i class="iconfont">&#xe617;</i>
-                    <i class="iconfont">&#xe617;</i>
-                    <i class="iconfont">&#xe617;</i>
-                    <p>25人已推荐</p>
-                    <p style="font-size: 20px;">￥36.6/kg</p> -->
-
-                </div>
-                
-            </div>
-            <div>
-            <!--     <img src="../img/xiangjiao1.jpg" /> -->
-                
-                <br />
-                <div style="margin-top: 100px;position: relative;right:60px" >           
-                <span>全国基地备货</span>
-                    <i class="iconfont">&#xe8f2;</i>
-                </div>
-                
-            </div>
-            <div>
-               <!--  <img src="../img/apple3.jpg" /> -->
-                
-                <br />
-                <div style="margin-top: 100px">
-                    <span>部分鲜果空运</span>
-                    <i class="iconfont">&#xeb68;</i>
-                </div>
-                
-            </div>
-        </div>
-        <div class="divtwo">
-            <img src="../img/xianguo1.png" />
-         <div>
-               
-            </div>
-        </div>
-        <div>
-            <div  style="display: flex;justify-content: flex-start;">
-              <!--   <img src="../img/yx_07.png" /> -->
-                <br />
-                <div style="margin-top: 30px">
-                    
-                    <i class="iconfont" style="margin-right: 15px">&#xe7cb;</i>
-                    <span>全国物流配送网</span>
-                </div>
-                
-            </div>
-            <div>
-                <!-- <img src="../img/yx_03.png" /> -->
-                
-                <br />
-                <div style="margin-top: 100px;position: relative;left:60px">
-                    
-                    <i class="iconfont" style="margin-right: 15px">&#xe8b2;</i>
-                    <span>订单按时到货</span>
-                </div>
-                
-            </div>
-            <div>
-              <!--   <img src="../img/yx_05.png" /> -->
-                
-                <br />
-                <div style="margin-top: 100px">
-                  
-                    <i class="iconfont" style="margin-right: 15px">&#xe990;</i> 
-                    <span>一小时快速配送</span>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        
-        
-    </div>
-   <div class="xgxd_icon">
-   	 <div></div>
-   	
-   	
-   	
-   	
-   	
-   </div> 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!--<div class="xianda_show">
-    	<div>
-    		<img src="" />
-    		<img src="" />
-    	</div>
-    	
-    	<div>
-    		<img src="" />
-    		<img src="" />
-    	</div>
-    	<div>
-    		<img src="" />
-    		<img src="" />
-    	</div>
-    </div>-->
-    
-<!--    
-    <div class="xgxd_shuju">
-    	<div class="shuju_top">
-    		<p>优质快捷</p>
-    		<p>鲜果达配送服务</p>
-    		<p>Fresh fruit has been committed to the rapid and convenient delivery of fresh fruit home</p>
-    	</div>
-    	<div class="shuju_content">
-    		<div>
-    			<p>水果送上门</p>
-    			<h2>Fruit to the door</h2>
-    			<p>鲜果达快送服务，将果园、基地、农场里的优质绿色水果，以最快的方式通过海运、航运、空运结合快速物流配送网，以及独有的一小时水果快送团队，将优质鲜果送到您家</p>
-    		</div>
-    		<div>
-    			<h2>Why choose us</h2>
-    			<div>多方式保证实效</div>
-    			<div>全程保鲜，保证水果新鲜</div>
-    			<div>独有的一小时水果快送团队</div>
-    			<div>时效性是鲜果达快送的不懈坚持</div>
-    		</div>
-    		
-    	</div>
-    	
-    	
-    	
-    	
-    </div>-->
-    <div class="section1_top" style="top:30px">
-        <p>RECOMMEND</p>
-        <div>
-            <p>配送优势</p>
-        </div>
-    </div>
-    <!-- about -->
-<div class="about" id="about">
-	<div class="container">
-		<!--<div class="abouthead">
-			<h5>优质快捷</h5>
-			<h2 class="heading" style="font-size: 30px;letter-spacing: 5px;">鲜果达配送服务</h2>
-			<p style="color: #777777;">Fresh fruit has been committed to the rapid and convenient delivery of fresh fruit home</p>
-		</div>-->
-		<div class="col-md-6 aboutleft" >
-			<h4>水果送上门</h4>
-			<h3>Fruit to the door</h3>
-			<p style="padding-top: 5px;">鲜果达快送服务，将果园、基地、农场里的优质绿色水果，<br>
-				以最快的方式通过海运、航运、空运结合快速物流配送网，<br>
-				以及独有的一小时水果快送团队，<br>
-				鲜果达始终坚持<br>
-				以最快的速度，最优的服务<br>
-				将优质鲜果送到您家</p>
-			
+	<!--固定导航-->
+	<ul class="menu">
+		<Li data-menuanchor="page6"><a href="xianguoinform.html">关于鲜果</a></Li>
+		<Li data-menuanchor="page5"><a href="xianguofuwu.html">鲜果服务</a></Li>
+		<Li data-menuanchor="page4"><a href="xianguodingzhi.html">鲜果定制</a></Li>
+		<Li data-menuanchor="page3" class="active"><a href="xianguoxianda.html">鲜果鲜达</a></Li>
+		<Li data-menuanchor="page2"><a href="xianguoyouxuan.html">鲜果优选</a></Li>
+		<Li data-menuanchor="page1"><a href="../index.html">首页</a></Li>
+	</ul>
+	<div class="banner">
+		<img src="../img/banner44.jpg">
+	</div>
+	</div>
+	<div class="section1_top" style="top:30px">
+		<p>RECOMMEND</p>
+		<div>
+			<p>鲜果鲜达</p>
 		</div>
-		<div class="col-md-6 aboutright">
-			<h3>Why Choose Us?</h3>
-			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h4 class="panel-title asd">
-									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-										多方式保证实效
-									</a>
-								</h4>
-							</div>
-							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-								<div class="panel-body panel_text">
-									水陆空一体化运输网络
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingTwo">
-								<h4 class="panel-title asd">
-									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										 全程保鲜，保证水果新鲜
-									</a>
-								</h4>
-							</div>
-							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
-								<div class="panel-body panel_text">
-									独有保鲜技术保护鲜果的新鲜度
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingThree">
-							  <h4 class="panel-title asd">
-								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									 独有的一小时水果快送团队
+	</div>
+	<div class="new_yxcontentList">
+		<div style="text-align: right;">
+			<div style="display: flex;justify-content: flex-end">
+				<br />
+				<div style="margin-top: 30px">
+					<span>用户手机下单</span>
+					<i class="iconfont">&#xe838;</i>
+				</div>
+			</div>
+			<div>
+				<br />
+				<div style="margin-top: 100px;position: relative;right:60px">
+					<span>全国基地备货</span>
+					<i class="iconfont">&#xe8f2;</i>
+				</div>
+			</div>
+			<div>
+
+				<br />
+				<div style="margin-top: 100px">
+					<span>部分鲜果空运</span>
+					<i class="iconfont">&#xeb68;</i>
+				</div>
+			</div>
+		</div>
+		<div class="divtwo">
+			<img src="../img/xianguo1.png" />
+			<div>
+			</div>
+		</div>
+		<div>
+			<div style="display: flex;justify-content: flex-start;">
+				<br />
+				<div style="margin-top: 30px">
+					<i class="iconfont" style="margin-right: 15px">&#xe7cb;</i>
+					<span>全国物流配送网</span>
+				</div>
+			</div>
+			<div>
+				<br />
+				<div style="margin-top: 100px;position: relative;left:60px">
+					<i class="iconfont" style="margin-right: 15px">&#xe8b2;</i>
+					<span>订单按时到货</span>
+				</div>
+			</div>
+			<div>
+				<br />
+				<div style="margin-top: 100px">
+					<i class="iconfont" style="margin-right: 15px">&#xe990;</i>
+					<span>一小时快速配送</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="section1_top" style="top:30px">
+		<p>RECOMMEND</p>
+		<div>
+			<p>配送优势</p>
+		</div>
+	</div>
+	<!-- about -->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="col-md-6 aboutleft">
+				<h4>水果送上门</h4>
+				<h3>Fruit to the door</h3>
+				<p style="padding-top: 5px;">鲜果达快送服务，将果园、基地、农场里的优质绿色水果，<br>
+					以最快的方式通过海运、航运、空运结合快速物流配送网，<br>
+					以及独有的一小时水果快送团队，<br>
+					鲜果达始终坚持<br>
+					以最快的速度，最优的服务<br>
+					将优质鲜果送到您家</p>
+			</div>
+			<div class="col-md-6 aboutright">
+				<h3>Why Choose Us?</h3>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title asd">
+								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+									href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									多方式保证实效
 								</a>
-							  </h4>
-							</div>
-							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
-								<div class="panel-body panel_text">
-									鲜果达城市快送团队覆盖全国上百个城市
-								</div>
-							</div>
+							</h4>
 						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingFour">
-							  <h4 class="panel-title asd">
-								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-									   时效性是鲜果达快送的不懈坚持
-								</a>
-							  </h4>
-							</div>
-							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
-								<div class="panel-body panel_text">
-									鲜果达尤其注重水果的品质和配送的时效性
-								</div>
+						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne"
+							aria-expanded="false" style="height: 0px;">
+							<div class="panel-body panel_text">
+								水陆空一体化运输网络
 							</div>
 						</div>
 					</div>
-		</div>
-		<div class="clearfix"></div>
-	<!--count-->
-<div class="count-agileits" id="stats">
-					<div class="count-grids">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+							<h4 class="panel-title asd">
+								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+									href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									全程保鲜，保证水果新鲜
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo"
+							aria-expanded="false">
+							<div class="panel-body panel_text">
+								独有保鲜技术保护鲜果的新鲜度
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+							<h4 class="panel-title asd">
+								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+									href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									独有的一小时水果快送团队
+								</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo"
+							aria-expanded="false">
+							<div class="panel-body panel_text">
+								鲜果达城市快送团队覆盖全国上百个城市
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingFour">
+							<h4 class="panel-title asd">
+								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+									href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									时效性是鲜果达快送的不懈坚持
+								</a>
+							</h4>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo"
+							aria-expanded="false">
+							<div class="panel-body panel_text">
+								鲜果达尤其注重水果的品质和配送的时效性
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<!--count-->
+			<div class="count-agileits" id="stats">
+				<div class="count-grids">
 					<div class="count-bgcolor-w3ls">
 						<div class="col-md-3 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='300' data-delay='.5' data-increment="1">300</div>
-									<span></span>
-									<h5>家连锁分店</h5>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='300'
+									data-delay='.5' data-increment="1">300</div>
+								<span></span>
+								<h5>家连锁分店</h5>
 							</div>
 						</div>
 						<div class="col-md-3 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='260' data-delay='.5' data-increment="1">260</div>
-									<span></span>
-									<h5>个城市覆盖</h5>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='260'
+									data-delay='.5' data-increment="1">260</div>
+								<span></span>
+								<h5>个城市覆盖</h5>
 							</div>
 						</div>
 						<div class="col-md-3 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='300' data-delay='.5' data-increment="1">300</div>
-									<span></span>
-									<h5>万年销售单</h5>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='300'
+									data-delay='.5' data-increment="1">300</div>
+								<span></span>
+								<h5>万年销售单</h5>
 							</div>
 						</div>
 						<div class="col-md-3 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='60' data-delay='.5' data-increment="1">60</div>
-									<span></span>
-									<h5>分钟准时达</h5>
-								</div>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='60' data-delay='.5'
+									data-increment="1">60</div>
+								<span></span>
+								<h5>分钟准时达</h5>
+							</div>
 						</div>
 						<div class="clearfix"></div>
-						</div>
 					</div>
-</div>
-<!--count-->
+				</div>
+			</div>
+			<!--count-->
+		</div>
 	</div>
-</div>
-<!-- //about -->
-    
-    
-    
-    
-    <!--<div class="section1_top" style="top:30px">
-        <p>RECOMMEND</p>
-        <div>
-            <p>鲜果达城市分布</p>
-        </div>
-    </div>-->
-    <!--
- 
- <div class="xgxd_list">
-		<h2>DISPATCHING</h2>
-		<p>Service in one hour</p>
-		
-		
-		
-		
-	</div>-->
- 
- 
- 
- 
- <div class="xgxd_content">
-        <img src="../img/xgxd (1).png"/>
-        <div>
-            <img src="../img/xgxd_04.png" />
-            <p>
-                <span>100个</span>国内大小城市
-            </p>
-            <p>
-                已实现同城最晚<span>一小时送达</span>
-            </p>
-        </div>
-  </div>
-   <div class="section1_top" style="top:30px">
-        <p>RECOMMEND</p>
-        <div>
-            <p>示范配送门店</p>
-        </div>
-    </div>
+	<!-- //about -->
+
+	<div class="xgxd_content">
+		<img src="../img/xgxd (1).png" />
+		<div>
+			<img src="../img/xgxd_04.png" />
+			<p>
+				<span>100个</span>国内大小城市
+			</p>
+			<p>
+				已实现同城最晚<span>一小时送达</span>
+			</p>
+		</div>
+	</div>
+	<div class="section1_top" style="top:30px">
+		<p>RECOMMEND</p>
+		<div>
+			<p>示范配送门店</p>
+		</div>
+	</div>
 	<!-- gallery -->
-	<div class="gallery" id="gallery" style="margin-top:10px;margin-bottom: 50px;">  
-		<div class="container"> 
+	<div class="gallery" id="gallery" style="margin-top:10px;margin-bottom: 50px;">
+		<div class="container">
 			<!--<h3 class="w3ls-title">示范门店</h3>-->
 			<div class="gallery-agileinfo">
 				<div class="col-sm-4 col-xs-6 w3gallery-grids">
 					<a href="#" class="imghvr-hinge-right figure">
-						<img src="../images/g1.jpg" alt="" title="Travel Adventure Image"/> 
+						<img src="../images/g1.jpg" alt="" title="Travel Adventure Image" />
 						<div class="agile-figcaption">
-						  <h4>鲜果达福州店</h4>
-						  <p>福建省福州市鼓楼区福州软件园c区软件大道89号</p>
+							<h4>鲜果达福州店</h4>
+							<p>福建省福州市鼓楼区福州软件园c区软件大道89号</p>
 						</div>
-					</a> 
-				</div> 
-				<div class="col-sm-4 col-xs-6 w3gallery-grids">
-					<a href="#" class="imghvr-hinge-right figure">
-						<img src="../images/g2.jpg" alt="" title="Travel Adventure Image"/> 
-						<div class="agile-figcaption">
-						  <h4>鲜果达厦门店</h4>
-						  <p>福建省厦门市思明区公园东路84号公园大厦一号楼一楼</p>
-						</div>
-					</a> 
+					</a>
 				</div>
 				<div class="col-sm-4 col-xs-6 w3gallery-grids">
 					<a href="#" class="imghvr-hinge-right figure">
-						<img src="../images/g3.jpg" alt="" title="Travel Adventure Image"/> 
+						<img src="../images/g2.jpg" alt="" title="Travel Adventure Image" />
 						<div class="agile-figcaption">
-						  <h4>鲜果达北京店</h4>
-						  <p>北京市朝阳区酒仙桥北路甲10号院105号楼水果产业园区内.</p>
+							<h4>鲜果达厦门店</h4>
+							<p>福建省厦门市思明区公园东路84号公园大厦一号楼一楼</p>
 						</div>
-					</a> 
+					</a>
 				</div>
 				<div class="col-sm-4 col-xs-6 w3gallery-grids">
 					<a href="#" class="imghvr-hinge-right figure">
-						<img src="../images/g4.jpg" alt="" title="Travel Adventure Image"/> 
+						<img src="../images/g3.jpg" alt="" title="Travel Adventure Image" />
 						<div class="agile-figcaption">
-						  <h4>鲜果达深圳店</h4>
-						  <p>广东省深圳市罗湖区怡景路1980号怡景大厦一区一号楼</p>
+							<h4>鲜果达北京店</h4>
+							<p>北京市朝阳区酒仙桥北路甲10号院105号楼水果产业园区内.</p>
 						</div>
-					</a> 
+					</a>
 				</div>
 				<div class="col-sm-4 col-xs-6 w3gallery-grids">
 					<a href="#" class="imghvr-hinge-right figure">
-						<img src="../images/g5.jpg" alt="" title="Travel Adventure Image"/> 
+						<img src="../images/g4.jpg" alt="" title="Travel Adventure Image" />
 						<div class="agile-figcaption">
-						  <h4>鲜果达杭州店</h4>
-						  <p>浙江省杭州市西湖区紫荆花路84号西湖小区北门旁</p>
+							<h4>鲜果达深圳店</h4>
+							<p>广东省深圳市罗湖区怡景路1980号怡景大厦一区一号楼</p>
 						</div>
-					</a> 
-				</div> 
+					</a>
+				</div>
 				<div class="col-sm-4 col-xs-6 w3gallery-grids">
 					<a href="#" class="imghvr-hinge-right figure">
-						<img src="../images/g6.jpg" alt="" title="Travel Adventure Image"/> 
+						<img src="../images/g5.jpg" alt="" title="Travel Adventure Image" />
 						<div class="agile-figcaption">
-						  <h4>鲜果达上海店</h4>
-						  <p>上海虹口区峨嵋路418弄124号-1甲座2楼419</p>
+							<h4>鲜果达杭州店</h4>
+							<p>浙江省杭州市西湖区紫荆花路84号西湖小区北门旁</p>
 						</div>
-					</a> 
-				</div> 
+					</a>
+				</div>
+				<div class="col-sm-4 col-xs-6 w3gallery-grids">
+					<a href="#" class="imghvr-hinge-right figure">
+						<img src="../images/g6.jpg" alt="" title="Travel Adventure Image" />
+						<div class="agile-figcaption">
+							<h4>鲜果达上海店</h4>
+							<p>上海虹口区峨嵋路418弄124号-1甲座2楼419</p>
+						</div>
+					</a>
+				</div>
 				<div class="clearfix"> </div>
-			</div> 
+			</div>
 		</div>
-</div>
-<!-- //gallery --> 
+	</div>
+	<!-- //gallery -->
+	<footer class="ejfooter">
+		<img src="../img/xd.png">
+		<p>福建省福州市鼓楼区软件大道89号</p>
+		<p>联系我们：12312312333&nbsp;&nbsp;0591-111111</p>
+		<p>Copyright ©2018 鲜果达有限公司 All Rights Reserved</p>
+	</footer>
 
 
- 
-     <footer class="ejfooter">
-			<img src="../img/xd.png">
-			<p>福建省福州市鼓楼区软件大道89号</p>
-			<p>联系我们：12312312333&nbsp;&nbsp;0591-111111</p>
-			<p>Copyright ©2018 鲜果达有限公司 All Rights Reserved</p>
-	</footer>    
-        
-        
 </body>
-<script type="text/javascript" src="../js/jquery-1.11.1.js" ></script>
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
 <script type="text/javascript" src="../js/bootstrap.js"></script>
-<script type="text/javascript" src="../js/numscroller-1.0.js" ></script>
+<script type="text/javascript" src="../js/numscroller-1.0.js"></script>
+
 </html>
