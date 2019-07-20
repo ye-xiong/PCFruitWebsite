@@ -1630,10 +1630,7 @@ h6 {
 	position: relative;
 }
 .newewm{
-	position: absolute;
-	z-index: 222;
-	top: 300px;
-	right: 320px;
+	display: inline-block;
 	background-color: #FFFFFF;
 	border-radius:10px;
 	color: #000000;
@@ -1649,8 +1646,8 @@ h6 {
 }
 .newcon{
 	position: absolute;
-	right:250px;
-	top: 160px;
+	right:2%;
+	top: 20%;
 	color: #FFFFFF;
 }
 .newcon>div{
@@ -1664,17 +1661,11 @@ h6 {
 }
 .newcon>div>h3{
 	font-size: 30px;
-	margin-left: 30px;
 }
 .newcon>div:nth-child(2){
-	position: absolute;
-	margin-top: 100px;
-	top:500px;
-	right: 110px;
 	text-align: center;
 }
 .newcon>div>p{
-	margin-left: 30px;
 	font-size: 20px;
 }
 /*二维码弹窗*/
